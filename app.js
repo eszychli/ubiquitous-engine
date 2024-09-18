@@ -6,9 +6,9 @@ document.getElementById('meetingSelect').addEventListener('change', function (ev
     const selectedMeeting = event.target.value;
 
     if (selectedMeeting === 'meeting1') {
-        loadMeetingData('meetings/sample_1.json', 'https://esh20051.blob.core.windows.net/hack24/recording_1.mp4');
+        loadMeetingData('meetings/sample_1.json', 'https://github.com/eszychli/ubiquitous-engine/raw/main/meetings/audio_1.aac');
     } else if (selectedMeeting === 'meeting2') {
-        loadMeetingData('meetings/sample_2.json', 'https://esh20051.blob.core.windows.net/hack24/recording_2.mp4');
+        loadMeetingData('meetings/sample_2.json', 'https://github.com/eszychli/ubiquitous-engine/raw/main/meetings/audio_1.aac');
     }
 });
 
