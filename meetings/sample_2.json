@@ -19,7 +19,11 @@
     {
         "error": "Coup Con",
         "suggestion": "KubeCon",
-        "mp4_timestamp": 2.50,
+        "mp4_timestamp": 170,
+        "previous": {
+            "vtt_timestamp": "2:42",
+            "utterance": "So I'm just trying to catch up with the thread." 
+        },
         "current": {
             "vtt_timestamp": "2:50",
             "utterance": "So it looks like maybe a platform on Reinvent, CICD on Google Next and get OPS on Coup Con."
@@ -30,207 +34,71 @@
         }
     },
     {
-        "error": "Virginia",
-        "suggestion": "Virgínia",
-        "mp4_timestamp": 3.13,
+        "error": "Saumya",
+        "suggestion": "Soumya",
+        "mp4_timestamp": 224,
         "previous": {
-            "vtt_timestamp": "00:06:02.000",
-            "utterance": "How are you?"
+            "vtt_timestamp": "3:39",
+            "utterance": "so that just so that they can get that that event support." 
         },
         "current": {
-            "vtt_timestamp": "00:06:03.760",
-            "utterance": "Good morning, Virginia."
+            "vtt_timestamp": "3:44",
+            "utterance": "But that looks good and I appreciate thanks for the link to Saumya on the rolls product announcements."
         },
         "next": {
-            "vtt_timestamp": "00:06:05.000",
-            "utterance": "Nice to meet you."
+            "vtt_timestamp": "3:55",
+            "utterance": "So I appreciate Brian for adding this."
         }
     },
     {
-        "error": "Fabian",
-        "suggestion": "Fabien",
-        "mp4_timestamp": 4.20,
+        "error": "Kid Sid",
+        "suggestion": "Sid Sijbrandij",
+        "mp4_timestamp": 890,
         "previous": {
-            "vtt_timestamp": "00:00:02.880",
-            "utterance": "I definitely have no subjects."
+            "vtt_timestamp": "14:48",
+            "utterance": "Are we dovetailing this with that?"
         },
         "current": {
-            "vtt_timestamp": "00:00:04.000",
-            "utterance": "Hi, Fabian."
+            "vtt_timestamp": "14:50",
+            "utterance": "So, so this is exactly where this is headed to is the idea that during the product keynote and then ideally during Kid Sid's keynote as well, that there's some level of like an announcement that we make that then the press cares about that announcement."
         },
         "next": {
-            "vtt_timestamp": "00:00:05.000",
-            "utterance": "Hello, Jessica."
+            "vtt_timestamp": "15:09",
+            "utterance": "Again, really tough to do at GitLab because it's all been around for a while."
         }
     },
     {
-        "error": "Jessica",
-        "suggestion": "Jessika",
-        "mp4_timestamp": 5.43,
+        "error": "Nope",
+        "suggestion": "Noopur",
+        "mp4_timestamp": 884,
         "previous": {
-            "vtt_timestamp": "00:00:04.000",
-            "utterance": "Hi, Fabian."
+            "vtt_timestamp": "14:40",
+            "utterance": "We this one is APR driven to some degree."
         },
         "current": {
-            "vtt_timestamp": "00:00:05.000",
-            "utterance": "Hello, Jessica."
+            "vtt_timestamp": "14:44",
+            "utterance": "What about like the Nope and Christie's product keynote at commit?"
         },
         "next": {
-            "vtt_timestamp": "00:00:06.000",
-            "utterance": "Hey, Karina."
+            "vtt_timestamp": "14:48",
+            "utterance": "Are we dovetailing this with that?"
         }
     },
     {
-        "error": "Karina",
-        "suggestion": "Carina",
-        "mp4_timestamp": 6.17,
+        "error": "Christie",
+        "suggestion": "Christie Lenneville",
+        "mp4_timestamp": 884,
         "previous": {
-            "vtt_timestamp": "00:00:05.000",
-            "utterance": "Hello, Jessica."
+            "vtt_timestamp": "14:40",
+            "utterance": "We this one is APR driven to some degree."
         },
         "current": {
-            "vtt_timestamp": "00:00:06.000",
-            "utterance": "Hey, Karina."
+            "vtt_timestamp": "14:44",
+            "utterance": "What about like the Nope and Christie's product keynote at commit?"
         },
         "next": {
-            "vtt_timestamp": "00:00:07.000",
-            "utterance": "Nice to meet you, Scott."
-        }
-    },
-    {
-        "error": "Scott",
-        "suggestion": "Scot",
-        "mp4_timestamp": 7.33,
-        "previous": {
-            "vtt_timestamp": "00:00:06.000",
-            "utterance": "Hey, Karina."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:07.000",
-            "utterance": "Nice to meet you, Scott."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:08.000",
-            "utterance": "Josh is also joining."
-        }
-    },
-    {
-        "error": "Josh",
-        "suggestion": "Joshua",
-        "mp4_timestamp": 8.11,
-        "previous": {
-            "vtt_timestamp": "00:00:07.000",
-            "utterance": "Nice to meet you, Scott."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:08.000",
-            "utterance": "Josh is also joining."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:09.000",
-            "utterance": "Gabe Weaver is here too."
-        }
-    },
-    {
-        "error": "Gabe Weaver",
-        "suggestion": "Gabriel Weaver",
-        "mp4_timestamp": 9.27,
-        "previous": {
-            "vtt_timestamp": "00:00:08.000",
-            "utterance": "Josh is also joining."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:09.000",
-            "utterance": "Gabe Weaver is here too."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:10.000",
-            "utterance": "Hi, Dove Hershkovitz."
-        }
-    },
-    {
-        "error": "Dove Hershkovitz",
-        "suggestion": "Dov Hershkovitz",
-        "mp4_timestamp": 10.10,
-        "previous": {
-            "vtt_timestamp": "00:00:09.000",
-            "utterance": "Gabe Weaver is here too."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:10.000",
-            "utterance": "Hi, Dove Hershkovitz."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:11.000",
-            "utterance": "Hey, Christy."
-        }
-    },
-    {
-        "error": "Christy",
-        "suggestion": "Christie",
-        "mp4_timestamp": 11.13,
-        "previous": {
-            "vtt_timestamp": "00:00:10.000",
-            "utterance": "Hi, Dove Hershkovitz."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:11.000",
-            "utterance": "Hey, Christy."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:12.000",
-            "utterance": "David Sakamoto will speak next."
-        }
-    },
-    {
-        "error": "David Sakamoto",
-        "suggestion": "David Sakamota",
-        "mp4_timestamp": 12.54,
-        "previous": {
-            "vtt_timestamp": "00:00:11.000",
-            "utterance": "Hey, Christy."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:12.000",
-            "utterance": "David Sakamoto will speak next."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:13.000",
-            "utterance": "Sarah O'Donnell has a question."
-        }
-    },
-    {
-        "error": "Sarah O'Donnell",
-        "suggestion": "Sara O'Donnell",
-        "mp4_timestamp": 13.23,
-        "previous": {
-            "vtt_timestamp": "00:00:12.000",
-            "utterance": "David Sakamoto will speak next."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:13.000",
-            "utterance": "Sarah O'Donnell has a question."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:14.000",
-            "utterance": "Nicole will respond."
-        }
-    },
-    {
-        "error": "Nicole",
-        "suggestion": "Nicolle",
-        "mp4_timestamp": 14.13,
-        "previous": {
-            "vtt_timestamp": "00:00:13.000",
-            "utterance": "Sarah O'Donnell has a question."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:14.000",
-            "utterance": "Nicole will respond."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:15.000",
-            "utterance": "Thanks, everyone."
+            "vtt_timestamp": "14:48",
+            "utterance": "Are we dovetailing this with that?"
         }
     }
 ]
