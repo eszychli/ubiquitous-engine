@@ -3,6 +3,9 @@ let currentErrorIndex = 0;
 let audioPlayer = document.getElementById('audioPlayer');
 let playTimeout;  // To track the 20-second playback timeout
 let isPlaying = false;  // To track whether the audio is currently playing
+let errorCount = 0;  // Track the number of errors
+let startTime;  // Track the start time for reviewing errors
+let progressStarted = false;  // To ensure progress bar starts after the first action
 
 // Dropdown to select meeting and load files
 document.getElementById('meetingSelect').addEventListener('change', function (event) {
@@ -23,6 +26,8 @@ function loadMeetingData(jsonFile, mp4File) {
         .then(data => {
             jsonData = data;
             currentErrorIndex = 0;
+            errorCount = jsonData.length;
+            startTime = new Date();  // Record the start time
             showError(currentErrorIndex);
         })
         .catch(error => {
@@ -45,15 +50,16 @@ function showError(index) {
         const errorCarousel = document.getElementById('errorCarousel');
 
         errorContent.innerHTML = `
-            <p><strong>Error:</strong> ${errorData.error}</p>
-            <p><strong>Suggested Correction:</strong> ${errorData.suggestion}</p>
+            <h3><span class="text-secondary">Error is:</span><strong> ${errorData.error}</strong></h3>
+            <h3><span class="text-secondary">Correct to:</span><strong> ${errorData.suggestion}</strong></h3>
         `;
 
         errorCarousel.classList.remove('hidden');
         displayVttWindow(errorData);
+        showButtons(true);  // Show buttons when reviewing errors
     } else {
-        document.getElementById('errorCarousel').classList.add('hidden');
-        alert('No more errors.');
+        // All errors are done, show the summary screen in the error carousel
+        showSummary();
     }
 }
 
@@ -61,9 +67,9 @@ function showError(index) {
 function displayVttWindow(errorData) {
     const vttDisplay = document.getElementById('vttDisplay');
     vttDisplay.innerHTML = `
-        <p><strong>Previous Utterance (${errorData.previous.vtt_timestamp}):</strong> ${errorData.previous.utterance}</p>
-        <p><strong>Current Utterance (${errorData.current.vtt_timestamp}):</strong> <span class="highlight">${errorData.current.utterance}</span></p>
-        <p><strong>Next Utterance (${errorData.next.vtt_timestamp}):</strong> ${errorData.next.utterance}</p>
+        <p><span class="text-secondary">${errorData.previous.vtt_timestamp}:</span> ${errorData.previous.utterance}</p>
+        <p><span class="text-secondary">${errorData.current.vtt_timestamp}:</span> <span class="highlight">${errorData.current.utterance}</span></p>
+        <p><span class="text-secondary">${errorData.next.vtt_timestamp}:</span> ${errorData.next.utterance}</p>
     `;
 
     // Scroll to the current utterance
@@ -108,19 +114,56 @@ function togglePlayButton(isPlaying) {
     }
 }
 
+// Show or hide buttons (Accept, Dismiss, Play) based on the current state
+function showButtons(show) {
+    const acceptBtn = document.getElementById('acceptBtn');
+    const dismissBtn = document.getElementById('dismissBtn');
+    const playBtn = document.getElementById('playBtn');
+
+    if (show) {
+        acceptBtn.style.display = 'inline-block';
+        dismissBtn.style.display = 'inline-block';
+        playBtn.style.display = 'inline-block';
+    } else {
+        acceptBtn.style.display = 'none';
+        dismissBtn.style.display = 'none';
+        playBtn.style.display = 'none';
+    }
+}
+
+// Update progress bar based on the number of reviewed errors
+function updateProgressBar() {
+    if (!progressStarted) return;  // Don't update until first action
+
+    const progressBar = document.getElementById('progressBar');
+    const progressPercentage = ((currentErrorIndex + 1) / errorCount) * 100;
+
+    progressBar.style.width = `${progressPercentage}%`;
+    progressBar.setAttribute('aria-valuenow', progressPercentage);
+    progressBar.innerText = `${Math.round(progressPercentage)}%`;
+}
+
 // Accept or dismiss the current error and move to the next one
 document.getElementById('acceptBtn').addEventListener('click', function () {
+    if (!progressStarted) {
+        progressStarted = true;  // Start progress tracking after first action
+    }
     stopPlayback();  // Stop playback when Accept is pressed
     const currentError = jsonData[currentErrorIndex];
     acceptCorrection(currentError.error, currentError.suggestion);
     currentErrorIndex++;
     showError(currentErrorIndex);
+    updateProgressBar();  // Update progress bar after action
 });
 
 document.getElementById('dismissBtn').addEventListener('click', function () {
+    if (!progressStarted) {
+        progressStarted = true;  // Start progress tracking after first action
+    }
     stopPlayback();  // Stop playback when Dismiss is pressed
     currentErrorIndex++;
     showError(currentErrorIndex);
+    updateProgressBar();  // Update progress bar after action
 });
 
 // Play button to play the audio from the current error's timestamp for 20 seconds
@@ -140,4 +183,48 @@ function acceptCorrection(errorWord, suggestion) {
     if (highlightedElement) {
         highlightedElement.textContent = highlightedElement.textContent.replace(errorWord, suggestion);
     }
+}
+
+// Show summary screen after reviewing all errors in the error carousel
+function showSummary() {
+    const endTime = new Date();  // Record the end time
+    const timeTaken = (endTime - startTime) / 1000;  // Calculate time in seconds
+    const timeTakenMinutes = Math.floor(timeTaken / 60);
+    const timeTakenSeconds = Math.floor(timeTaken % 60);
+
+    const summaryHtml = `
+        <div class="text-center">
+            <div class="display-1 text-success mt-3">
+                <i class="bi bi-check-circle-fill"></i> <!-- Bootstrap check icon -->
+            </div>
+            <h2 class="mt-3">Review completed!</h2>
+            <p class="lead">You reviewed ${errorCount} errors.</p>
+            <p class="text-secondary">It took you ${timeTakenMinutes} minutes and ${timeTakenSeconds} seconds to complete.</p>
+            <button id="startOverBtn" class="btn btn-outline-secondary mt-3">Start over</button>
+        </div>
+    `;
+
+    // Replace error carousel content with the summary
+    document.getElementById('errorContent').innerHTML = summaryHtml;
+
+    // Hide buttons when summary is shown
+    showButtons(false);
+
+    // Clear VTT window
+    document.getElementById('vttDisplay').innerHTML = '';
+
+    // Add event listener to "Start Over" button
+    document.getElementById('startOverBtn').addEventListener('click', function () {
+        startOver();
+    });
+}
+
+// Restart the experience
+function startOver() {
+    currentErrorIndex = 0;  // Reset the current error index
+    startTime = new Date();  // Reset the start time
+    progressStarted = false;  // Reset progress bar tracking
+    showError(currentErrorIndex);  // Show the first error
+    document.getElementById('vttDisplay').innerHTML = '';  // Clear VTT display
+    updateProgressBar();  // Reset progress bar to 0%
 }
