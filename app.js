@@ -6,9 +6,9 @@ document.getElementById('meetingSelect').addEventListener('change', function (ev
     const selectedMeeting = event.target.value;
 
     if (selectedMeeting === 'meeting1') {
-        loadMeetingData('meetings/sample_1.json', 'meetings/recording_1.mp4');
+        loadMeetingData('meetings/sample_1.json', 'https://esh20051.blob.core.windows.net/hack24/recording_1.mp4');
     } else if (selectedMeeting === 'meeting2') {
-        loadMeetingData('meetings/sample_2.json', 'meetings/recording_2.mp4');
+        loadMeetingData('meetings/sample_2.json', 'https://esh20051.blob.core.windows.net/hack24/recording_2.mp4');
     }
 });
 
