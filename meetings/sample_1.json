@@ -2,7 +2,7 @@
     {
         "error": "Daniel",
         "suggestion": "Danielle",
-        "mp4_timestamp": 1,
+        "mp4_timestamp": 1.16,
         "previous": {
             "vtt_timestamp": "00:00:00.000",
             "utterance": "Hello, everyone."
@@ -19,7 +19,7 @@
     {
         "error": "Eric",
         "suggestion": "Erik",
-        "mp4_timestamp": 2,
+        "mp4_timestamp": 4.56,
         "previous": {
             "vtt_timestamp": "00:02:00.000",
             "utterance": "Nice to see you."
@@ -36,7 +36,7 @@
     {
         "error": "Virginia",
         "suggestion": "Virgínia",
-        "mp4_timestamp": 3,
+        "mp4_timestamp": 3.13,
         "previous": {
             "vtt_timestamp": "00:06:02.000",
             "utterance": "How are you?"
@@ -53,7 +53,7 @@
     {
         "error": "Fabian",
         "suggestion": "Fabien",
-        "mp4_timestamp": 4,
+        "mp4_timestamp": 4.20,
         "previous": {
             "vtt_timestamp": "00:00:02.880",
             "utterance": "I definitely have no subjects."
@@ -70,7 +70,7 @@
     {
         "error": "Jessica",
         "suggestion": "Jessika",
-        "mp4_timestamp": 5,
+        "mp4_timestamp": 5.43,
         "previous": {
             "vtt_timestamp": "00:00:04.000",
             "utterance": "Hi, Fabian."
@@ -87,7 +87,7 @@
     {
         "error": "Karina",
         "suggestion": "Carina",
-        "mp4_timestamp": 6,
+        "mp4_timestamp": 6.17,
         "previous": {
             "vtt_timestamp": "00:00:05.000",
             "utterance": "Hello, Jessica."
@@ -104,7 +104,7 @@
     {
         "error": "Scott",
         "suggestion": "Scot",
-        "mp4_timestamp": 7,
+        "mp4_timestamp": 7.33,
         "previous": {
             "vtt_timestamp": "00:00:06.000",
             "utterance": "Hey, Karina."
@@ -121,7 +121,7 @@
     {
         "error": "Josh",
         "suggestion": "Joshua",
-        "mp4_timestamp": 8,
+        "mp4_timestamp": 8.11,
         "previous": {
             "vtt_timestamp": "00:00:07.000",
             "utterance": "Nice to meet you, Scott."
@@ -138,7 +138,7 @@
     {
         "error": "Gabe Weaver",
         "suggestion": "Gabriel Weaver",
-        "mp4_timestamp": 9,
+        "mp4_timestamp": 9.27,
         "previous": {
             "vtt_timestamp": "00:00:08.000",
             "utterance": "Josh is also joining."
@@ -155,7 +155,7 @@
     {
         "error": "Dove Hershkovitz",
         "suggestion": "Dov Hershkovitz",
-        "mp4_timestamp": 10,
+        "mp4_timestamp": 10.10,
         "previous": {
             "vtt_timestamp": "00:00:09.000",
             "utterance": "Gabe Weaver is here too."
@@ -172,7 +172,7 @@
     {
         "error": "Christy",
         "suggestion": "Christie",
-        "mp4_timestamp": 11,
+        "mp4_timestamp": 11.13,
         "previous": {
             "vtt_timestamp": "00:00:10.000",
             "utterance": "Hi, Dove Hershkovitz."
@@ -189,7 +189,7 @@
     {
         "error": "David Sakamoto",
         "suggestion": "David Sakamota",
-        "mp4_timestamp": 12,
+        "mp4_timestamp": 12.54,
         "previous": {
             "vtt_timestamp": "00:00:11.000",
             "utterance": "Hey, Christy."
@@ -206,7 +206,7 @@
     {
         "error": "Sarah O'Donnell",
         "suggestion": "Sara O'Donnell",
-        "mp4_timestamp": 13,
+        "mp4_timestamp": 13.23,
         "previous": {
             "vtt_timestamp": "00:00:12.000",
             "utterance": "David Sakamoto will speak next."
@@ -223,7 +223,7 @@
     {
         "error": "Nicole",
         "suggestion": "Nicolle",
-        "mp4_timestamp": 14,
+        "mp4_timestamp": 14.13,
         "previous": {
             "vtt_timestamp": "00:00:13.000",
             "utterance": "Sarah O'Donnell has a question."
