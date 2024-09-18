@@ -72,7 +72,11 @@ function displayVttWindow(errorData) {
 // Sync the MP4 audio player to the correct timestamp
 function syncAudio(timestamp) {
     const audioPlayer = document.getElementById('audioPlayer');
-    audioPlayer.currentTime = timestamp;
+    
+    // Check if timestamp is valid before setting currentTime
+    if (!isNaN(timestamp) && audioPlayer.readyState > 0) {
+        audioPlayer.currentTime = timestamp;
+    }
     audioPlayer.play();
 }
 
