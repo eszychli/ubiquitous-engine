@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Correction Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Dropdown to select a meeting -->
+        <div class="dropdown">
+            <label for="meetingSelect" class="label">Select Meeting:</label>
+            <select id="meetingSelect">
+                <option value="" selected disabled>Select a meeting...</option>
+                <option value="meeting1">Meeting #1</option>
+                <option value="meeting2">Meeting #2</option>
+            </select>
+        </div>
+
+        <!-- Carousel for displaying errors -->
+        <div id="errorCarousel" class="carousel hidden">
+            <div id="errorContent" class="error-content">
+                <!-- Error content will be injected here dynamically -->
+            </div>
+            <div class="carousel-controls">
+                <button id="acceptBtn" class="carousel-btn">Accept</button>
+                <button id="dismissBtn" class="carousel-btn">Dismiss</button>
+            </div>
+        </div>
+
+        <!-- VTT Display -->
+        <div>
+            <label for="vttDisplay" class="label">Transcript (VTT) Window:</label>
+            <div id="vttDisplay" class="vtt-display">
+                <!-- Dynamic utterances will be shown here -->
+            </div>
+        </div>
+
+        <!-- MP4 Audio Player -->
+        <div>
+            <label for="audioPlayer" class="label">MP4 Audio Player:</label>
+            <audio id="audioPlayer" class="audio-player" controls></audio>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
