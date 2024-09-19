@@ -1,240 +1,87 @@
 [
     {
-        "error": "Daniel",
-        "suggestion": "Danielle",
-        "mp4_timestamp": 1.16,
+        "error": "cube views",
+        "suggestion": "key reviews",
+        "mp4_timestamp": 20,
         "previous": {
-            "vtt_timestamp": "00:00:00.000",
-            "utterance": "Hello, everyone."
+            "vtt_timestamp": "0:10",
+            "utterance": "So I've got #4 in the agenda, which is a proposal to break up this meeting into four department key reviews."
         },
         "current": {
-            "vtt_timestamp": "00:00:01.000",
-            "utterance": "Hey, Daniel."
+            "vtt_timestamp": "0:20",
+            "utterance": "So currently this is engineering, development, quality, security and UX infrastructure and support do their own cube views."
         },
         "next": {
-            "vtt_timestamp": "00:00:02.880",
-            "utterance": "I definitely have no subjects."
+            "vtt_timestamp": "0:30",
+            "utterance": "Already I have the reasons why."
         }
     },
     {
-        "error": "Eric",
-        "suggestion": "Erik",
-        "mp4_timestamp": 4.56,
+        "error": "Mr.",
+        "suggestion": "MR",
+        "mp4_timestamp": 110,
         "previous": {
-            "vtt_timestamp": "00:02:00.000",
-            "utterance": "Nice to see you."
+            "vtt_timestamp": "1:41",
+            "utterance": "And then I've got #5 which is we've got R&D overall Mr."
         },
         "current": {
-            "vtt_timestamp": "00:02:02.280",
-            "utterance": "Hey, Eric."
+            "vtt_timestamp": "1:50",
+            "utterance": "rate, and we also have R&D wider Mr."
         },
         "next": {
-            "vtt_timestamp": "00:02:04.000",
-            "utterance": "Good morning, Virginia."
+            "vtt_timestamp": "1:52",
+            "utterance": "rate, both as top level KPIs for engineering."
         }
     },
     {
-        "error": "Virginia",
-        "suggestion": "Virgínia",
-        "mp4_timestamp": 3.13,
+        "error": "York",
+        "suggestion": "work",
+        "mp4_timestamp": 390,
         "previous": {
-            "vtt_timestamp": "00:06:02.000",
-            "utterance": "How are you?"
+            "vtt_timestamp": "6:25",
+            "utterance": "The context is as we grow as a company, we should make sure we we keep the community up."
         },
         "current": {
-            "vtt_timestamp": "00:06:03.760",
-            "utterance": "Good morning, Virginia."
+            "vtt_timestamp": "6:30",
+            "utterance": "Like the logical thing is for the community to flatline and the size of the York to grow, and before you know it, you've kind of outgrown the wider community."
         },
         "next": {
-            "vtt_timestamp": "00:06:05.000",
-            "utterance": "Nice to meet you."
+            "vtt_timestamp": "6:40",
+            "utterance": "Yeah."
         }
     },
     {
-        "error": "Fabian",
-        "suggestion": "Fabien",
-        "mp4_timestamp": 4.20,
+        "error": "Mrs.",
+        "suggestion": "MRs",
+        "mp4_timestamp": 131,
         "previous": {
-            "vtt_timestamp": "00:00:02.880",
-            "utterance": "I definitely have no subjects."
+            "vtt_timestamp": "2:07",
+            "utterance": "The problems I see with this are that one, the wider Mr."
         },
         "current": {
-            "vtt_timestamp": "00:00:04.000",
-            "utterance": "Hi, Fabian."
+            "vtt_timestamp": "2:11",
+            "utterance": "rate, the one that includes internal and external Mrs."
         },
         "next": {
-            "vtt_timestamp": "00:00:05.000",
-            "utterance": "Hello, Jessica."
+            "vtt_timestamp": "2:15",
+            "utterance": "it duplicates the overall Mr."
         }
     },
     {
-        "error": "Jessica",
-        "suggestion": "Jessika",
-        "mp4_timestamp": 5.43,
+        "error": "P is",
+        "suggestion": "PIs",
+        "mp4_timestamp": 503,
         "previous": {
-            "vtt_timestamp": "00:00:04.000",
-            "utterance": "Hi, Fabian."
+            "vtt_timestamp": "8:23",
+            "utterance": "Timeline."
         },
         "current": {
-            "vtt_timestamp": "00:00:05.000",
-            "utterance": "Hello, Jessica."
+            "vtt_timestamp": "8:23",
+            "utterance": "We do have P is on the raw number of community Mrs."
         },
         "next": {
-            "vtt_timestamp": "00:00:06.000",
-            "utterance": "Hey, Karina."
-        }
-    },
-    {
-        "error": "Karina",
-        "suggestion": "Carina",
-        "mp4_timestamp": 6.17,
-        "previous": {
-            "vtt_timestamp": "00:00:05.000",
-            "utterance": "Hello, Jessica."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:06.000",
-            "utterance": "Hey, Karina."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:07.000",
-            "utterance": "Nice to meet you, Scott."
-        }
-    },
-    {
-        "error": "Scott",
-        "suggestion": "Scot",
-        "mp4_timestamp": 7.33,
-        "previous": {
-            "vtt_timestamp": "00:00:06.000",
-            "utterance": "Hey, Karina."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:07.000",
-            "utterance": "Nice to meet you, Scott."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:08.000",
-            "utterance": "Josh is also joining."
-        }
-    },
-    {
-        "error": "Josh",
-        "suggestion": "Joshua",
-        "mp4_timestamp": 8.11,
-        "previous": {
-            "vtt_timestamp": "00:00:07.000",
-            "utterance": "Nice to meet you, Scott."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:08.000",
-            "utterance": "Josh is also joining."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:09.000",
-            "utterance": "Gabe Weaver is here too."
-        }
-    },
-    {
-        "error": "Gabe Weaver",
-        "suggestion": "Gabriel Weaver",
-        "mp4_timestamp": 9.27,
-        "previous": {
-            "vtt_timestamp": "00:00:08.000",
-            "utterance": "Josh is also joining."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:09.000",
-            "utterance": "Gabe Weaver is here too."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:10.000",
-            "utterance": "Hi, Dove Hershkovitz."
-        }
-    },
-    {
-        "error": "Dove Hershkovitz",
-        "suggestion": "Dov Hershkovitz",
-        "mp4_timestamp": 10.10,
-        "previous": {
-            "vtt_timestamp": "00:00:09.000",
-            "utterance": "Gabe Weaver is here too."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:10.000",
-            "utterance": "Hi, Dove Hershkovitz."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:11.000",
-            "utterance": "Hey, Christy."
-        }
-    },
-    {
-        "error": "Christy",
-        "suggestion": "Christie",
-        "mp4_timestamp": 11.13,
-        "previous": {
-            "vtt_timestamp": "00:00:10.000",
-            "utterance": "Hi, Dove Hershkovitz."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:11.000",
-            "utterance": "Hey, Christy."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:12.000",
-            "utterance": "David Sakamoto will speak next."
-        }
-    },
-    {
-        "error": "David Sakamoto",
-        "suggestion": "David Sakamota",
-        "mp4_timestamp": 12.54,
-        "previous": {
-            "vtt_timestamp": "00:00:11.000",
-            "utterance": "Hey, Christy."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:12.000",
-            "utterance": "David Sakamoto will speak next."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:13.000",
-            "utterance": "Sarah O'Donnell has a question."
-        }
-    },
-    {
-        "error": "Sarah O'Donnell",
-        "suggestion": "Sara O'Donnell",
-        "mp4_timestamp": 13.23,
-        "previous": {
-            "vtt_timestamp": "00:00:12.000",
-            "utterance": "David Sakamoto will speak next."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:13.000",
-            "utterance": "Sarah O'Donnell has a question."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:14.000",
-            "utterance": "Nicole will respond."
-        }
-    },
-    {
-        "error": "Nicole",
-        "suggestion": "Nicolle",
-        "mp4_timestamp": 14.13,
-        "previous": {
-            "vtt_timestamp": "00:00:13.000",
-            "utterance": "Sarah O'Donnell has a question."
-        },
-        "current": {
-            "vtt_timestamp": "00:00:14.000",
-            "utterance": "Nicole will respond."
-        },
-        "next": {
-            "vtt_timestamp": "00:00:15.000",
-            "utterance": "Thanks, everyone."
+            "vtt_timestamp": "8:27",
+            "utterance": "and we can make make the shift and why they're confirming from the definition."
         }
     }
 ]
