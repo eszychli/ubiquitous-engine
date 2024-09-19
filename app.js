@@ -12,7 +12,7 @@ document.getElementById('meetingSelect').addEventListener('change', function (ev
     const selectedMeeting = event.target.value;
 
     if (selectedMeeting === 'meeting1') {
-        loadMeetingData('meetings/sample_1.json', 'https://github.com/eszychli/ubiquitous-engine/raw/main/meetings/audio_1.aac');
+        loadMeetingData('meetings/sample_1.json', 'https://github.com/eszychli/ubiquitous-engine/raw/main/meetings/audio_1_2.aac');
     } else if (selectedMeeting === 'meeting2') {
         loadMeetingData('meetings/sample_2.json', 'https://github.com/eszychli/ubiquitous-engine/raw/main/meetings/audio_2.aac');
     }
